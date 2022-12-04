@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import axios from 'axios';
-import Notiflix from 'notiflix';
 
 import Loader from 'components/Loader';
 import Button from 'components/Button';
