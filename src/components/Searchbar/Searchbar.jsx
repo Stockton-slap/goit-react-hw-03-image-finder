@@ -1,9 +1,15 @@
+import PropTypes from 'prop-types';
+
 import { Component } from 'react';
 import { BsSearch } from 'react-icons/bs';
 
 import Notiflix from 'notiflix';
 
 class Searchbar extends Component {
+  static propTypes = {
+    onSubmit: PropTypes.func.isRequired,
+  };
+
   state = {
     text: '',
   };

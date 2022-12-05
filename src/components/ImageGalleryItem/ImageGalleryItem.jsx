@@ -5,6 +5,8 @@ import Loader from 'components/Loader';
 import Button from 'components/Button';
 import Modal from 'components/Modal';
 
+import PropTypes from 'prop-types';
+
 const Status = {
   IDLE: 'idle',
   PENDING: 'pending',
@@ -13,6 +15,10 @@ const Status = {
 };
 
 class ImageGalleryItem extends Component {
+  static propTypes = {
+    imageName: PropTypes.string.isRequired,
+  };
+
   state = {
     images: [],
     page: 1,
@@ -121,7 +127,3 @@ class ImageGalleryItem extends Component {
 }
 
 export default ImageGalleryItem;
-
-// 1 when write nonsense
-// 2 when empty field
-// 3 button center

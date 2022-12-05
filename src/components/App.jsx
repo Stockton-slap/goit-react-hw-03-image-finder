@@ -22,10 +22,7 @@ export class App extends Component {
       <div className="app">
         <Searchbar onSubmit={this.handleSearchSubmit} />
         <ImageGallery>
-          <ImageGalleryItem
-            imageName={imageName}
-            largeImage={this.handleLargeImage}
-          />
+          <ImageGalleryItem imageName={imageName} />
         </ImageGallery>
       </div>
     );
