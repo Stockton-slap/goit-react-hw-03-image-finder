@@ -123,7 +123,6 @@ class ImageGallery extends Component {
                 smallImage={webformatURL}
                 imageName={imageName}
                 handleImageClick={() => this.handleImageClick(index)}
-                imagesIndex={index}
               />
             ))}
           </ul>

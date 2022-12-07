@@ -17,7 +17,6 @@ ImageGalleryItem.propTypes = {
   smallImage: PropTypes.string.isRequired,
   imageName: PropTypes.string.isRequired,
   handleImageClick: PropTypes.func.isRequired,
-  imagesIndex: PropTypes.number.isRequired,
 };
 
 export default ImageGalleryItem;
