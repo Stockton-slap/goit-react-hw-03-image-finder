@@ -78,10 +78,8 @@ class ImageGallery extends Component {
       this.getImages();
     }
 
-    if (prevState.page !== page) {
-      if (prevState.page < page) {
-        this.getImages();
-      }
+    if (prevState.page < page) {
+      this.getImages();
     }
   }
 
