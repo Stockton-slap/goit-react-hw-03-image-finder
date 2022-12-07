@@ -4,7 +4,6 @@ import '../styles.css';
 
 import Searchbar from './Searchbar';
 import ImageGallery from './ImageGallery';
-import ImageGalleryItem from './ImageGalleryItem';
 
 export class App extends Component {
   state = {
@@ -21,9 +20,7 @@ export class App extends Component {
     return (
       <div className="app">
         <Searchbar onSubmit={this.handleSearchSubmit} />
-        <ImageGallery>
-          <ImageGalleryItem imageName={imageName} />
-        </ImageGallery>
+        <ImageGallery imageName={imageName}></ImageGallery>
       </div>
     );
   }
