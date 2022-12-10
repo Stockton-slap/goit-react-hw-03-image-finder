@@ -6,7 +6,7 @@ import ImageGalleryItem from 'components/ImageGalleryItem';
 import Loader from 'components/Loader';
 import Button from 'components/Button';
 import Modal from 'components/Modal';
-import fetchImages from 'components/fetchImages';
+import fetchImages from 'fetchImages';
 
 const Status = {
   IDLE: 'idle',
@@ -64,11 +64,11 @@ class ImageGallery extends Component {
         return this.setState({ status: Status.IDLE });
       }
 
-      this.getImages(imageName, this.state.status);
+      this.getImages();
     }
 
     if (prevState.page < page) {
-      this.getImages(imageName, this.state.status);
+      this.getImages();
     }
   }
 
